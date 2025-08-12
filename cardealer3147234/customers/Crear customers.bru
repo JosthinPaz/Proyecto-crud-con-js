@@ -1,0 +1,22 @@
+meta {
+  name: Crear customers
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3010/customers
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id": 4,
+    "name": "Andres",
+    "lastname": "Paz",
+    "birthDate": "2000-01-01",
+    "isActive": true,
+    "description": "Cliente frecuente"
+  }
+}

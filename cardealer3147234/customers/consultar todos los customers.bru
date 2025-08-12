@@ -1,0 +1,11 @@
+meta {
+  name: consultar todos los customers
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:3010/customers
+  body: none
+  auth: inherit
+}
