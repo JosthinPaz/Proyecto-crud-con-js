@@ -1,0 +1,21 @@
+meta {
+  name: ACTUALIZAR
+  type: http
+  seq: 5
+}
+
+patch {
+  url: http://localhost:3010/brands/8
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "hola ggg"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

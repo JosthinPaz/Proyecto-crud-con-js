@@ -1,0 +1,15 @@
+meta {
+  name: traer todas las categorias por id
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:3010/brands/5
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
